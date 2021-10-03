@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
     <header class="page-header">
       <nav class="main-navigation">
         <a class="header-logo">
-          <img class="header-logo_image" src="" alt="Логотип Интернет-магазина Device">
+          <img class="header-logo_image" src="img/logo.svg" width="145" height="36" alt="Логотип Интернет-магазина Device">
         </a>
 
         <ul class="header_navigation-user-list">
@@ -80,7 +81,7 @@
         <ul class="main_promo_slider">
           <li class="main_promo_slider_item">
             <h2 class="main_promo_slider_item_heading">Порхает как бабочка, жалит как пчела!</h2>
-            <img class="main_promo_slider_item_heading_image" src="" alt="Квадрокоптер с лазером">
+            <img class="main_promo_slider_item_heading_image" src="img/slider-1.png" width="560" height="560" alt="Квадрокоптер с лазером">
             <span class="main_promo_slider_item_slide-number">01</span>
             <p class="main_promo_slider_item_heading_description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
             <a class="main_promo_slider_item_heading_details-button button-yellow-crossline" href="#">Подробнее</a>
@@ -94,7 +95,7 @@
 
           <li class="main_promo_slider_item">
             <h2 class="main_promo_slider_item_heading">Худеем правильно!</h2>
-            <img class="main_promo_slider_item_heading_image" src="" alt="Фитнес-браслет">
+            <img class="main_promo_slider_item_heading_image" src="img/slider-2.png" width="560" height="560" alt="Фитнес-браслет">
             <span class="main_promo_slider_item_slide-number">02</span>
             <p class="main_promo_slider_item_heading_description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
             <a class="main_promo_slider_item_heading_details-button button-yellow-crossline" href="#">Подробнее</a>
@@ -106,7 +107,7 @@
 
           <li class="main_promo_slider_item">
             <h2 class="main_promo_slider_item_heading">Делай селфи, как Бен Стиллер! </h2>
-            <img class="main_promo_slider_item_heading_image" src="" alt="Палка для селфи">
+            <img class="main_promo_slider_item_heading_image" src="img/slider-3.png" width="560" height="560" alt="Палка для селфи">
             <span class="main_promo_slider_item_slide-number">03</span>
             <p class="main_promo_slider_item_heading_description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
             <a class="main_promo_slider_item_heading_details-button button-yellow-crossline" href="#">Подробнее</a>
@@ -155,36 +156,42 @@
         <ul class="main_catalog-categories_list">
           <li class="main_catalog-categories_list_item">
             <a class="main_catalog-categories_list_link" href="#">
+              <div class="main_catalog-categories_list_icon vr-icon"></div>
               <h3 class="main_catalog-categories_list_heading">Виртуальная реальность</h3>
             </a>
           </li>
 
           <li class="main_catalog-categories_list_item">
             <a class="main_catalog-categories_list_link" href="#">
+              <div class="main_catalog-categories_list_icon monopod-icon"></div>
               <h3 class="main_catalog-categories_list_heading">Моноподы для селфи</h3>
             </a>
           </li>
 
           <li class="main_catalog-categories_list_item">
             <a class="main_catalog-categories_list_link" href="#">
+              <div class="main_catalog-categories_list_icon action-cam-icon"></div>
               <h3 class="main_catalog-categories_list_heading">Экшн-камеры</h3>
             </a>
           </li>
 
           <li class="main_catalog-categories_list_item">
             <a class="main_catalog-categories_list_link" href="#">
+              <div class="main_catalog-categories_list_icon ftns-bands-icon"></div>
               <h3 class="main_catalog-categories_list_heading">Фитнес-браслеты</h3>
             </a>
           </li>
 
           <li class="main_catalog-categories_list_item">
             <a class="main_catalog-categories_list_link" href="#">
+              <div class="main_catalog-categories_list_icon smart-watches-icon"></div>
               <h3 class="main_catalog-categories_list_heading">Умные часы</h3>
             </a>
           </li>
 
           <li class="main_catalog-categories_list_item">
             <a class="main_catalog-categories_list_link" href="#">
+              <div class="main_catalog-categories_list_icon copters-icon"></div>
               <h3 class="main_catalog-categories_list_heading">Квадрокоптеры</h3>
             </a>
           </li>
@@ -208,17 +215,17 @@
         </ul>
 
         <ul class="main_about-services_list">
-          <li class="main_about-services_list_item">
+          <li class="main_about-services_list_item main_about-services_list_item_delivery">
             <h3 class="main_about-services_list_item_heading">Доставка</h3>
             <p class="main_about-services_list_item_description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </li>
 
-          <li class="main_about-services_list_item">
+          <li class="main_about-services_list_item main_about-services_list_item_warranty">
             <h3 class="main_about-services_list_item_heading">Гарантия</h3>
             <p class="main_about-services_list_item_description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
           </li>
 
-          <li class="main_about-services_list_item">
+          <li class="main_about-services_list_item main_about-services_list_item_credit">
             <h3 class="main_about-services_list_item_heading">Кредит</h3>
             <p class="main_about-services_list_item_description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
           </li>
@@ -275,7 +282,7 @@
 
     <footer class="page-footer">
       <a class="footer-logo">
-        <img src="" alt="Логотип Интернет-магазина Device">
+        <img src="img/logo-footer.svg" width="145" height="36" alt="Логотип Интернет-магазина Device">
       </a>
       <address>Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
 
@@ -302,19 +309,19 @@
         <h2 class="visually-hidden">Мы в социальный сетях</h2>
         <ul class="footer_social_list">
           <li class="footer_social_list_item">
-            <a href="https://www.facebook.com/htmlacademy">
+            <a class="footer_social_list_item_link-facebook" href="https://www.facebook.com/htmlacademy">
               <span class="visually-hidden">Facebook</span>
             </a>
           </li>
 
           <li class="footer_social_list_item">
-            <a href="https://www.instagram.com/htmlacademy">
+            <a class="footer_social_list_item_link-instagram" href="https://www.instagram.com/htmlacademy">
               <span class="visually-hidden">Instagram</span>
             </a>
           </li>
 
           <li class="footer_social_list_item">
-            <a href="https://twitter.com/htmlacademy_ru">
+            <a class="footer_social_list_item_link-twitter" href="https://twitter.com/htmlacademy_ru">
               <span class="visually-hidden">Twitter</span>
             </a>
           </li>
@@ -322,7 +329,7 @@
       </section>
 
       <a href="https://www.htmlacademy.ru">
-        <img src="" alt="Логотип HTML Academy">
+        <img src="img/html_academy-logo.svg" width="115" height="33" alt="Логотип HTML Academy">
       </a>
     </footer>
   </body>

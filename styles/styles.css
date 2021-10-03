@@ -1,0 +1,78 @@
+.main_catalog-categories_list_icon {
+  width: 160px;
+  height: 160px;
+  background-color: #FFE17F;
+}
+
+.vr-icon {
+  background-image: url(../img/VR.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.monopod-icon {
+  background-image: url(../img/Monopod.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+
+.action-cam-icon {
+  background-image: url(../img/act_cam.svg);
+  background-repeat: no-repeat;
+  background-position: 55% 51%;
+}
+
+.ftns-bands-icon {
+  background-image: url(../img/ftns_band.svg);
+  background-repeat: no-repeat;
+  background-position: 49% 52%;
+}
+
+.smart-watches-icon {
+  background-image: url(../img/smart_watch.svg);
+  background-repeat: no-repeat;
+  background-position: 51% 50%;
+}
+
+.copters-icon {
+  background-image: url(../img/copter.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 53%;
+}
+/* Градиент будет на весь блок когда будет разметка блока */
+.main_about-services {
+  background: linear-gradient(#FFFFFF 50%, #F0F0F0 50%);
+}
+
+/* временный размер для отображения картинки */
+.main_about-services_list_item {
+  height: 300px;
+}
+
+.main_about-services_list_item_delivery {
+  background: url(../img/delivery.svg) no-repeat 100% 100%;
+}
+
+.main_about-services_list_item_warranty {
+  background: url(../img/warranty.svg) no-repeat 100% 100%;
+}
+
+.main_about-services_list_item_credit {
+  background: url(../img/credit.svg) no-repeat 100% 100%;
+}
+
+.footer_social_list_item {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.footer_social_list_item_link-facebook {
+  background: url(../img/facebook.svg) no-repeat 50% 50%;
+}
+
+.footer_social_list_item_link-instagram {
+  background: url(../img/instagram.svg) no-repeat 50% 50%;
+}
+
+.footer_social_list_item_link-twitter {
+  background: url(../img/twitter.svg) no-repeat 50% 50%;
+}
