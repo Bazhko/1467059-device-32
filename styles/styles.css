@@ -5,13 +5,13 @@
 }
 
 .vr-icon {
-  background-image: url(../img/VR.svg);
+  background-image: url(../img/vr.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
 .monopod-icon {
-  background-image: url(../img/Monopod.svg);
+  background-image: url(../img/monopod.svg);
   background-repeat: no-repeat;
   background-position: 50% 100%;
 }
