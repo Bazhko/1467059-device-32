@@ -586,16 +586,18 @@ body {
   height: 14px;
   margin-right: 21px;
 }
+
 /* Футер */
-.footer-container {
-  width: 1160px;
-  margin: 0 auto;
-}
 
 .page-footer {
   background-color: #444444;
   color: #FFFFFF;
   margin: 0;
+}
+
+.footer-container {
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .page-footer a {
@@ -613,7 +615,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .footer_address {
