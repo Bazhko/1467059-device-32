@@ -596,6 +596,11 @@ body {
 }
 
 .footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 62px;
+  align-items: center;
+  align-content: space-around;
   width: 1160px;
   margin: 0 auto;
 }
@@ -607,18 +612,15 @@ body {
 
 .footer-logo {
   display: block;
-  margin-top: 62px;
+  width: 145px;
   margin-bottom: 35px;
-}
-
-.page-footer_navigation-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin-right: calc(100% - 145px);
 }
 
 .footer_address {
+  display: inline-block;
   width: 239px;
+  margin-right: 114px;
   font-style: normal;
   font-size: 16px;
   line-height: 19px;
@@ -627,6 +629,8 @@ body {
 .page-footer_navigation_list {
   display: flex;
   margin: 0;
+  padding: 0;
+  width: 458px;
 }
 
 .page-footer_navigation_list_item {
@@ -638,14 +642,28 @@ body {
   margin-right: 7px;
 }
 
+.footer_tel {
+  margin-right: 0;
+  margin-left: auto;
+  width: 293px;
+  text-align: end;
+  line-height: 30px;
+  font-size: 16px;
+}
+
 .page-footer_yellow-line {
   width: 80px;
   height: 7px;
   background-color: #FFC700;
+  margin-top: 68px;
+  margin-bottom: 77px;
+  margin-right: 425px;
 }
 
 .footer_social_list {
   display: flex;
+  width: 150px;
+  padding: 0;
 }
 
 .footer_social_list li:not(:last-child) {
@@ -676,12 +694,11 @@ body {
   background: url(../img/twitter.svg) no-repeat 50% 50%;
 }
 
-.footer_tel {
- line-height: 30px;
- font-size: 16px;
+.html-academy-logo {
+  width: 115px;
+  margin-right: 0;
+  margin-left: auto;
 }
-
-
 /* Каталог */
 
 .header_user-cabinet-exit-button {
