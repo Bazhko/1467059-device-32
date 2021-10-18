@@ -654,6 +654,8 @@ body {
 .main_about-us_company-list {
   padding: 0;
   margin-bottom: 52px;
+  flex-grow: 1;
+  margin-top: 70px;
 }
 
 .main_about-us_company-list li:not(:last-child) {
@@ -1036,12 +1038,16 @@ box-sizing: border-box;
   letter-spacing: 0.2em;
 }
 
+.catalog-products_filters-wrap {
+  padding-top: 71px;
+}
+
 .catalog-products_filters_content-wrap {
-  width: 328px;
+  width: 207px;
   margin-left: auto;
   margin-right: 0;
-  padding-left: 60px;
-  box-sizing: border-box;
+  padding-right: 68px;
+
 }
 
 .catalog-filter-heading {
@@ -1060,8 +1066,263 @@ box-sizing: border-box;
   background-color: #E5E5E5;
 }
 
+.catalog-filter_color-list {
+  padding: 0;
+}
+
+
+/* Стилизация чекбоксов в фильтре */
+
+.catalog-filter_color-list {
+  list-style: none;
+}
+
+.control {
+  padding-left: 37px;
+}
+
+.control-input {
+  position: absolute;
+  appearance: none;
+}
+
+.control-mark {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  margin-left: -37px;
+}
+
+.control-input:checked + .control-mark {
+  border: 2px solid rgba(0, 0, 0, 1);
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 0 3.1 6.6 0 3.6v3.3L3.2 10 10 3.3V0Z' fill='%23000'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control-input:checked:hover + .control-mark {
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 0 3.1 6.6 0 3.6v3.3L3.2 10 10 3.3V0Z' fill='%23000' opacity='.5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control-input:hover + .control-mark {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control-input:checked:focus + .control-mark {
+  border: 2px solid #AF4FFF;
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 0 3.1 6.6 0 3.6v3.3L3.2 10 10 3.3V0Z' fill='%23AF4FFF'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control-input:checked:focus:hover + .control-mark {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 0 3.1 6.6 0 3.6v3.3L3.2 10 10 3.3V0Z' fill='%23000' opacity='.5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control-input:checked:focus:active + .control-mark {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.2'%3E%3Cpath d='M10 0L3.1 6.6L0 3.6V6.9L3.2 10L10 3.3V0Z' fill='black'/%3E%3C/g%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control-input:checked:active + .control-mark {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.2'%3E%3Cpath d='M10 0L3.1 6.6L0 3.6V6.9L3.2 10L10 3.3V0Z' fill='black'/%3E%3C/g%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control-input:focus:active + .control-mark {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.control-input:focus:hover + .control-mark {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.control-input:focus + .control-mark {
+  border: 2px solid #AF4FFF;
+}
+
+.control-input:active ~ .control-label {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.control-input:checked:active ~ .control-label {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.control-input:checked:focus:hover ~ .control-label {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.control-input:focus ~ .control-label {
+  color: #AF4FFF;
+}
+
+.control-input:focus:active ~ .control-label {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.control-input:checked:hover ~ .control-label {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.control-input:focus:hover ~ .control-label {
+  color: rgba(0, 0, 0, 1);
+}
+
+/* Стилищация radio-input в фильтре */
+
+.catalog-filter_bluetooth-list {
+  padding: 0;
+}
+
+.catalog-filter_bluetooth-list {
+  list-style: none;
+}
+
+.radio-control {
+  display: block;
+}
+
+.radio-control-input {
+  position: absolute;
+  appearance: none;
+}
+
+.radio-control-label {
+  display: inline-block;
+  margin-left: 17px;
+  vertical-align: middle;
+
+}
+
+.radio-control-mark {
+  vertical-align: middle;
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+.radio-control-mark::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #000;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.radio-control-input:checked + .radio-control-mark {
+  border: 2px solid #000;
+}
+
+.radio-control-input:checked + .radio-control-mark::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.radio-control-input:checked:focus + .radio-control-mark {
+  border: 2px solid #AF4FFF;
+}
+
+.radio-control-input:checked:focus + .radio-control-mark::before {
+  transform: translate(-50%, -50%) scale(1);
+  background-color: #AF4FFF;
+}
+
+.radio-control-input:checked:focus ~ .radio-control-label {
+  color: #AF4FFF;
+}
+
+.radio-control-input:focus + .radio-control-mark {
+  border: 2px solid #AF4FFF;
+}
+
+.radio-control-input:focus + .radio-control-mark::before {
+  transform: translate(-50%, -50%) scale(1);
+  background-color: #AF4FFF;
+}
+
+.radio-control-input:checked:hover + .radio-control-mark {
+  border: 2px solid rgba(1, 1, 1, 0.5);
+}
+
+.radio-control-input:checked:hover + .radio-control-mark::before {
+  transform: translate(-50%, -50%) scale(1);
+  background-color: rgba(1, 1, 1, 0.5);
+}
+
+.radio-control-input:checked:hover ~ .radio-control-label {
+  color: rgba(1, 1, 1, 0.5);
+}
+
+.radio-control-input:checked:active + .radio-control-mark {
+  border: 2px solid rgba(1, 1, 1, 0.2);
+}
+
+.radio-control-input:checked:active + .radio-control-mark::before {
+  transform: translate(-50%, -50%) scale(1);
+  background-color: rgba(1, 1, 1, 0.2);
+}
+
+.radio-control-input:checked:active ~ .radio-control-label {
+  color: rgba(1, 1, 1, 0.2);
+}
+
+.radio-control-input:active + .radio-control-mark {
+  border: 2px solid rgba(1, 1, 1, 0.2);
+}
+
+.radio-control-input:active + .radio-control-mark::before {
+  background-color: rgba(1, 1, 1, 0.2);
+}
+
+.radio-control-input:active ~ .radio-control-label {
+  color: rgba(1, 1, 1, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .catalog-filter_form_button {
   width: 200px;
+}
+
+.catalog-filter-group {
+  border: none;
+  border-top: 2px solid #000;
+  padding: 0;
+  margin: 0;
 }
 
 /* Сортировка каталога */
@@ -1126,6 +1387,11 @@ box-sizing: border-box;
   padding-left: 72px;
 }
 
+.product-cards-list_item {
+  width: 360px;
+  height: 462px;
+}
+
 .product-cards-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1147,7 +1413,9 @@ box-sizing: border-box;
 }
 
 .product-card-link {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .product-card-image {
@@ -1156,18 +1424,17 @@ box-sizing: border-box;
 
 .product-card-title {
   font-weight: 700;
+  font-size: 18px;
   line-height: 24px;
-  display: inline-block;
   margin: 0;
   width: 280px;
   min-height: 50px;
   line-height: 24px;
-  letter-spacing: -2%;
+  letter-spacing: -0.02em;
 }
 
 .product-card-price {
-  display: inline-block;
-  vertical-align: top;
+  min-height: 50px;
   line-height: 21px;
   font-weight: 400;
   color: #444444;
