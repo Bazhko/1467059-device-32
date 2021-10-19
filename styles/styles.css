@@ -1206,7 +1206,6 @@ box-sizing: border-box;
 
 .radio-control-mark {
   vertical-align: middle;
-  /* position: relative; */
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -1223,9 +1222,6 @@ box-sizing: border-box;
   border-radius: 50%;
   background-color: #000;
   margin: 8px;
-  /* position: absolute;
-  left: 8px;
-  top: 8px; */
   transform: scale(0);
 }
 
@@ -1368,6 +1364,7 @@ box-sizing: border-box;
 .catalog_products_display_products_wrap {
   padding-top: 69px;
   padding-left: 72px;
+  box-sizing: border-box;
 }
 
 .product-cards-list_item {
