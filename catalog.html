@@ -8,16 +8,16 @@
 </head>
 
 <body>
-  <header class="page-header sections-container">
+  <header class="sections-container page-header">
     <div class="header-container">
       <nav class="main-navigation">
-        <a class="header-logo" href="../index.html">
+        <a class="header-logo" href="index.html">
           <img class="header-logo_image" src="img/logo.svg" width="145" height="36" alt="Логотип Интернет-магазина Device">
         </a>
 
         <ul class="header_navigation-user-list">
-          <li class="header_navigation-user_item">
-            <form class="header_search" action="https://echo.htmlacademy.ru" method="get">
+          <li class="header_navigation-user-list_item header_navigation-user_item_search">
+            <form class="header_search purple-border-focus" action="https://echo.htmlacademy.ru" method="get">
               <input class="header_search_field" name="search" placeholder="Поиск по сайту" type="search">
               <button class="header_search_button" type="submit">
                 <span>Найти</span>
@@ -25,39 +25,47 @@
             </form>
           </li>
 
-          <li class="header_navigation-user-list_item">
-            <a class="header_navigation-user-list_item_link header_user-cabinet-button" href="#">Коля Петухов</a>
+          <li class="header_navigation-user-list_item header_navigation-user-list_item_user-cabinet user-logged">
+            <a class="header_navigation-user-list_item_link header_user-cabinet-button purple-border-focus" href="#">
+              <span>Коля Петухов</span>
+            </a>
           </li>
 
-          <li class="header_navigation-user-list_item">
+          <li class="header_navigation-user-list_item header_navigation-user-list_item_exit">
             <button class="header_navigation-user-list_item_link header_user-cabinet-exit-button" type="button">Выйти</button>
           </li>
 
-          <li class="header_navigation-user-list_item">
-            <a class="header_navigation-user-list_item_link header_compare-button" href="#">Сравнить</a>
+          <li class="header_navigation-user-list_item header_navigation-user-list_item_compare">
+            <a class="header_navigation-user-list_item_link header_compare-button purple-border-focus" href="#">
+              <span>Сравнить</span>
+            </a>
           </li>
-
-          <li class="header_navigation-user-list_item">
-            <a class="header_navigation-user-list_item_link header_add-to-cart-button" href="#">Корзина</a>
+          <li class="header_navigation-user-list_item header_navigation-user-list_item_cart">
+            <a class="header_navigation-user-list_item_link header_add-to-cart-button purple-border-focus" href="#">
+              <span>Корзина</span></a>
           </li>
 
         </ul>
 
         <ul class="header_main-nav">
           <li class="header_main-nav_item header_main-nav_item_catalog">
-            <a class="header_main-nav_item_link button" href="catalog.html">каталог товаров</a>
+            <a class="header_main-nav_item_link header_main-nav_item_catalog-button purple-border-focus" href="catalog.html">
+              <span>каталог товаров</span>
+            </a>
           </li>
           <li class="header_main-nav_item header_main-nav_item_plus-button">
-            <a class="header_main-nav_item_link plus-button" href="#"></a>
+            <a class="header_main-nav_item_link plus-button" href="#">
+              <span class="plus-button_hover"></span>
+            </a>
           </li>
           <li class="header_main-nav_item header_main-nav_item_delivery">
-            <a class="header_main-nav_item_link button" href="#">доставка</a>
+            <a class="header_main-nav_item_link button purple-border-focus under-line_hover" href="#">доставка</a>
           </li>
           <li class="header_main-nav_item header_main-nav_item_waranty">
-            <a class="header_main-nav_item_link button" href="#">гарантия</a>
+            <a class="header_main-nav_item_link button purple-border-focus under-line_hover" href="#">гарантия</a>
           </li>
           <li class="header_main-nav_item header_main-nav_item_contacts">
-            <a class="header_main-nav_item_link button" href="#">контакты</a>
+            <a class="header_main-nav_item_link button purple-border-focus under-line_hover" href="#">контакты</a>
           </li>
         </ul>
 
@@ -97,7 +105,7 @@
         </li>
 
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="catalog.html">Каталог</a>
+          <a class="breadcrumbs-link" href="catalog.html">Каталог товаров</a>
         </li>
 
         <li class="breadcrumbs-item">
@@ -233,7 +241,7 @@
                   <h3 class="product-card-title">Любительская селфи-палка</h3>
                   <b class="product-card-price">500 ₽</b>
                   <div class="product-card-button_wrap">
-                    <span class="product-card-button button-yellow-light-crossline button">Подробнее</span>
+                    <span class="product-card-button button-yellow-dark-crossline button">Подробнее</span>
                   </div>
                 </a>
               </li>
@@ -243,8 +251,8 @@
                   <img class="product-card-image" src="img/product-2.jpg" width="360" height="380 alt="Фотография селфи-палки профессиональной">
                   <h3 class="product-card-title">Профессиональная<br> селфи-палка </h3>
                   <b class="product-card-price">1 500 ₽</b>
-                  <div class="product-card-button_wrap visually-hidden">
-                    <span class="product-card-button button-yellow-light-crossline button">Подробнее</span>
+                  <div class="product-card-button_wrap">
+                    <span class="product-card-button button-yellow-dark-crossline button">Подробнее</span>
                   </div>
                 </a>
               </li>
@@ -254,8 +262,8 @@
                   <img class="product-card-image" src="img/product-3.jpg" width="360" height="380 alt="Фотография селфи-палки с поплавком">
                   <h3 class="product-card-title">Непотопляемая<br> селфи-палка</h3>
                   <b class="product-card-price">2 500 ₽</b>
-                  <div class="product-card-button_wrap visually-hidden">
-                    <span class="product-card-button button-yellow-light-crossline button">Подробнее</span>
+                  <div class="product-card-button_wrap">
+                    <span class="product-card-button button-yellow-dark-crossline button">Подробнее</span>
                   </div>
                 </a>
               </li>
@@ -266,8 +274,8 @@
                   <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
                   <span class="product-card_new-product-label">new</span>
                   <b class="product-card-price">4 900 ₽</b>
-                  <div class="product-card-button_wrap visually-hidden">
-                    <span class="product-card-button button-yellow-light-crossline button">Подробнее</span>
+                  <div class="product-card-button_wrap">
+                    <span class="product-card-button button-yellow-dark-crossline button">Подробнее</span>
                   </div>
                 </a>
               </li>
@@ -329,7 +337,7 @@
 
   <footer class="page-footer">
     <div class="footer-container sections-container">
-      <a class="footer-logo">
+      <a class="footer-logo" href="index.html">
         <img src="img/logo-footer.svg" width="145" height="36" alt="Логотип Интернет-магазина Device">
       </a>
 
@@ -339,16 +347,22 @@
           <h2 class="visually-hidden">Навигация по сайту</h2>
           <ul class="page-footer_navigation_list">
             <li class="page-footer_navigation_list_item">
-              <a class="page-footer_navigation_list_item_link button" href="#">доставка</a>
-              </li>
+              <a class="page-footer_navigation_list_item_link button under-line_hover" href="#">
+                <span>доставка</span>
+              </a>
+            </li>
 
             <li class="page-footer_navigation_list_item">
-              <a class="page-footer_navigation_list_item_link button" href="#">гарантия</a>
-              </li>
+              <a class="page-footer_navigation_list_item_link button under-line_hover" href="#">
+                <span>гарантия</span>
+              </a>
+            </li>
 
             <li class="page-footer_navigation_list_item">
-              <a class="page-footer_navigation_list_item_link button" href="#">контакты</a>
-              </li>
+              <a class="page-footer_navigation_list_item_link button" href="#">
+                <span>контакты</span>
+              </a>
+            </li>
           </ul>
         </section>
 
