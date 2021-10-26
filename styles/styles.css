@@ -93,6 +93,7 @@ body {
 
 .purple-border-focus:focus {
   outline: 2px solid #AF4FFF;
+  outline-offset: 0;
 }
 
 /* Обретка для центрирования секций */
@@ -940,8 +941,12 @@ body {
   align-items: center;
 }
 
-.main_delivery-order_button-wrap:focus {
-  outline: 5px solid #AF4FFF;
+.main_delivery-order_button_link {
+  display: block;
+}
+
+.main_delivery-order_button_link:focus {
+  outline-width: 5px;
 }
 
 .main_delivery-order_button-wrap:hover::before {
