@@ -91,7 +91,7 @@ body {
   text-align: center;
 }
 
-.purple-border-focus:focus {
+.purple-border-focus:focus-visible {
   outline: 2px solid #AF4FFF;
   outline-offset: 0;
 }
@@ -346,6 +346,176 @@ body {
   opacity: 0.3;
 }
 
+.header_add-to-cart-button:focus + .cart-pop-up,
+.header_add-to-cart-button:hover + .cart-pop-up{
+  display: block;
+}
+
+/* Поп-ап корзины */
+
+.cart-pop-up:hover {
+  display: block;
+}
+
+.cart-pop-up {
+  display: none;
+  position: absolute;
+  width: 320px;
+  height: 302px;
+  background-color: #000;
+  z-index: 4;
+  top: 82px;
+  right: -20px;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.cart-pop-up::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  background-color: #000;
+  right: 156px;
+  top: -4px;
+  transform: rotate(-40deg) skew(10deg);
+}
+
+.cart_prod_list {
+
+  width: 100%;
+  color: #fff;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.cart_prod_list_item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+.cart_prod_list_item_link {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.cart_prod_list_item_photo {
+  margin-right: 23px;
+}
+
+.cart_prod_list_item_heading {
+  width: 180px;
+  margin: 0;
+  padding-top: 2px;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.cart_prod_list_item_remove {
+  width: 25px;
+  height: 25px;
+  color: #fff;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: #000;
+  position: absolute;
+  top: 20px;
+  right: 13px;
+  cursor: pointer;
+  display: block;
+  transform: rotate(45deg);
+  font-size: 27px;
+  font-family: "Times New Roman", sans-serif;
+  font-weight: 400;
+  line-height: 10px;
+}
+
+.cart_prod_list_item_remove span {
+
+}
+
+.cart_total {
+  color: #fff;
+  width: 100%;
+  height: 43px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-color: #1A1A1A;
+}
+
+.cart_total_item {
+  line-height: 44px;
+}
+
+.cart_prod_open-cart {
+  display: block;
+  width: 280px;
+  height: 50px;
+  background-color: #fff;
+  color: #000;
+  margin: 20px;
+  line-height: 50px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-left: 4px;
+  padding-top: 1px;
+}
+
+.cart_prod_list_item_link:hover {
+  opacity: 60%;
+}
+
+.cart_prod_list_item_link:focus-visible {
+  outline: none;
+}
+
+.cart_prod_list_item_link:focus-visible img {
+  outline: 5px solid #AF4FFF;
+}
+
+.cart_prod_list_item_link:focus-visible .cart_prod_list_item_heading {
+  color: #AF4FFF;
+}
+
+.cart_prod_list_item_remove:hover {
+  opacity: 60%;
+}
+
+.cart_prod_list_item_link:active {
+  opacity: 30%;
+}
+
+.cart_prod_list_item_remove:active {
+  opacity: 30%;
+}
+
+.cart_prod_list_item_remove:focus-visible {
+  outline: 2px solid #AF4FFF;
+}
+
+.cart_prod_open-cart:focus-visible {
+  outline-width: 5px;
+}
+
+.cart_prod_open-cart:hover {
+  background-color: #FFE17F;
+}
+
+.cart_prod_open-cart:active {
+  background-color: #FFE17F;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+
 /* Главная навигация */
 
 .header_main-nav {
@@ -491,9 +661,7 @@ body {
   opacity: 0.3;
 }
 
-.header_main-nav_item_catalog-button:active:focus {
-  outline: none;
-}
+
 
 /* Слайдер */
 
@@ -647,6 +815,7 @@ body {
   width: 40px;
   height: 80px;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 .main_promo_slider_prvs-slide-btn {
@@ -655,6 +824,7 @@ body {
   width: 40px;
   height: 80px;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 .slider-btn:hover {
@@ -680,6 +850,7 @@ body {
   border-radius: 50%;
   border: 2px solid #000000;
   background-color: #FFFFFF;
+  cursor: pointer;
 }
 
 .slider-dot-btn:focus {
@@ -699,10 +870,6 @@ body {
 
 .slider-dot-btn_active {
   background-color: #000;
-}
-
-.slider-dot-btn_active:focus {
-  background-color: #AF4FFF;
 }
 
 .slider-dot-btn_active:hover {
@@ -779,7 +946,7 @@ body {
   outline: 5px solid #AF4FFF;
 }
 
-.main_catalog-categories_list_link:focus .main_catalog-categories_list_heading {
+.main_catalog-categories_list_link:focus     .main_catalog-categories_list_heading {
   color: #AF4FFF;
 }
 
@@ -1785,8 +1952,8 @@ padding-bottom: 44px;
 
 .filter-order-button_descending {
   background: url(../img/sort-down.svg) no-repeat 50% 50%;
-  margin-left: 19px;
   opacity: 20%;
+  margin-right: -10px;
 }
 
 .filter-order-button_ascending {

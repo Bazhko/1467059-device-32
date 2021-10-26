@@ -32,7 +32,7 @@
           </li>
 
           <li class="header_navigation-user-list_item header_navigation-user-list_item_exit">
-            <button class="header_navigation-user-list_item_link header_user-cabinet-exit-button" type="button">Выйти</button>
+            <button class="header_navigation-user-list_item_link header_user-cabinet-exit-button purple-border-focus" type="button">Выйти</button>
           </li>
 
           <li class="header_navigation-user-list_item header_navigation-user-list_item_compare">
@@ -42,9 +42,30 @@
           </li>
           <li class="header_navigation-user-list_item header_navigation-user-list_item_cart">
             <a class="header_navigation-user-list_item_link header_add-to-cart-button purple-border-focus" href="#">
-              <span>Корзина</span></a>
-          </li>
+              <span>Корзина</span>
+            </a>
+              <section class="cart-pop-up">
+                <h2 class="visually-hidden">Обзор вашей корзины</h2>
 
+                <ul class="cart_prod_list">
+                  <li class="cart_prod_list_item">
+                    <img class="cart_prod_list_item_photo" src="img/product-1-small.jpg" width="41" height="43" alt="превью товара">
+                    <h3 class="cart_prod_list_item_heading">Любительская<br>селфи-палка</h3>
+                    <button class="cart_prod_list_item_remove"><span>+</span></button>
+                  </li>
+                  <li class="cart_prod_list_item">
+                    <img class="cart_prod_list_item_photo" src="img/product-2-small.jpg" width="41" height="43" alt="превью товара">
+                    <h3 class="cart_prod_list_item_heading">Профессиональная<br>селфи-палка</h3>
+                    <button class="cart_prod_list_item_remove" href="#"><span>+</span></button>
+                  </li>
+                </ul>
+                <ul class="cart_total">
+                  <li class="cart_total_item cart_total_prod">Товаров: 2</li>
+                  <li class="cart_total_item cart_total_sum">Сумма: 2000 ₽</li>
+                </ul>
+                <button class="cart_prod_open-cart button">Открыть корзину</button>
+              </section>
+          </li>
         </ul>
 
         <ul class="header_main-nav">
@@ -52,7 +73,33 @@
             <a class="header_main-nav_item_link header_main-nav_item_catalog-button purple-border-focus" href="catalog.html">
               <span>каталог товаров</span>
             </a>
+
+
+            <div class="header_main-nav_catalog-nav-hidden">
+
+              <ul class="header_main-nav_catalog-nav-hidden_list">
+                <li class="header_main-nav_catalog-nav-hidden_list_item">
+                  <a href="#">Виртуальная реальность</a>
+                </li>
+                <li class="header_main-nav_catalog-nav-hidden_list_item">
+                  <a href="#">Моноподы для cелфи</a>
+                </li>
+                <li class="header_main-nav_catalog-nav-hidden_list_item">
+                  <a href="#">Экшн-камеры</a>
+                </li>
+                <li class="header_main-nav_catalog-nav-hidden_list_item">
+                  <a href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="header_main-nav_catalog-nav-hidden_list_item">
+                  <a href="#">Умные часы</a>
+                </li>
+                <li class="header_main-nav_catalog-nav-hidden_list_item">
+                  <a href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </div>
           </li>
+
           <li class="header_main-nav_item header_main-nav_item_plus-button">
             <a class="header_main-nav_item_link plus-button" href="#">
               <span class="plus-button_hover"></span>
@@ -68,29 +115,6 @@
             <a class="header_main-nav_item_link button purple-border-focus under-line_hover" href="#">контакты</a>
           </li>
         </ul>
-
-        <div class="header_main-nav_catalog-nav-hidden">
-          <ul class="header_main-nav_catalog-nav-hidden_list">
-            <li class="header_main-nav_catalog-nav-hidden_list_item">
-              <a href="#">Виртуальная реальность</a>
-            </li>
-            <li class="header_main-nav_catalog-nav-hidden_list_item">
-              <a href="#">Моноподы для cелфи</a>
-            </li>
-            <li class="header_main-nav_catalog-nav-hidden_list_item">
-              <a href="#">Экшн-камеры</a>
-            </li>
-            <li class="header_main-nav_catalog-nav-hidden_list_item">
-              <a href="#">Фитнес-браслеты</a>
-            </li>
-            <li class="header_main-nav_catalog-nav-hidden_list_item">
-              <a href="#">Умные часы</a>
-            </li>
-            <li class="header_main-nav_catalog-nav-hidden_list_item">
-              <a href="#">Квадрокоптеры</a>
-            </li>
-          </ul>
-        </div>
       </nav>
     </div>
   </header>
