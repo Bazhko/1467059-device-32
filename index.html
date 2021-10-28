@@ -77,24 +77,25 @@
 
                 <ul class="header_main-nav_catalog-nav-hidden_list">
                   <li class="header_main-nav_catalog-nav-hidden_list_item">
-                    <a href="#">Виртуальная реальность</a>
+                    <a class="header_main-nav_catalog-nav-hidden_list_item_link purple-border-focus" href="#">Виртуальная реальность</a>
                   </li>
                   <li class="header_main-nav_catalog-nav-hidden_list_item">
-                    <a href="#">Моноподы для cелфи</a>
+                    <a class="header_main-nav_catalog-nav-hidden_list_item_link purple-border-focus" href="#">Моноподы для cелфи</a>
                   </li>
                   <li class="header_main-nav_catalog-nav-hidden_list_item">
-                    <a href="#">Экшн-камеры</a>
+                    <a class="header_main-nav_catalog-nav-hidden_list_item_link purple-border-focus" href="#">Экшн-камеры</a>
                   </li>
                   <li class="header_main-nav_catalog-nav-hidden_list_item">
-                    <a href="#">Фитнес-браслеты</a>
+                    <a class="header_main-nav_catalog-nav-hidden_list_item_link purple-border-focus" href="#">Фитнес-браслеты</a>
                   </li>
                   <li class="header_main-nav_catalog-nav-hidden_list_item">
-                    <a href="#">Умные часы</a>
+                    <a class="header_main-nav_catalog-nav-hidden_list_item_link purple-border-focus" href="#">Умные часы</a>
                   </li>
                   <li class="header_main-nav_catalog-nav-hidden_list_item">
-                    <a href="#">Квадрокоптеры</a>
+                    <a class="header_main-nav_catalog-nav-hidden_list_item_link purple-border-focus" href="#">Квадрокоптеры</a>
                   </li>
                 </ul>
+
               </div>
             </li>
 
@@ -367,11 +368,39 @@
 
       <section class="main_delivery-order_button">
         <div class="sections-container">
-          <a class="main_delivery-order_button_link purple-border-focus" href="#">
+          <a class="main_delivery-order_button_link purple-border-focus" href="#delivery_pop-up-wrap">
             <div class="main_delivery-order_button-wrap">
               <h2 class="main_delivery-order_button_heading">Доставим редкий товар под заказ</h2>
             </div>
           </a>
+        </div>
+
+        <div class="delivery_pop-up-wrap" id="delivery_pop-up-wrap">
+          <article class="delivery_pop-up">
+            <h2 class="delivery_pop-up_heading">Доставка под заказ</h2>
+            <a href="#" class="delivery_pop-up_close-button purple-border-focus"><span>+</span></a>
+            <form class="delivery_pop-up_form" action="https://echo.htmlacademy.ru" method="POST">
+            <label class="delivery_pop-up_form_label">
+              <span class="delivery_pop-up_form_label_text">Ваше имя:</span>
+              <input class="delivery_pop-up_form_input delivery_pop-up_form_name purple-border-focus" type="text" name="user-name" placeholder="Имя Фамилия">
+              <span class="delivery_pop-up_form_input_message delivery_pop-up_form_name_message">Пожалуйста, представьтесь</span>
+            </label>
+            <label class="delivery_pop-up_form_label">
+              <span class="delivery_pop-up_form_label_text">Ваш e-mail:</span>
+              <input class="delivery_pop-up_form_input delivery_pop-up_form_email purple-border-focus" type="email" name="user-email" placeholder="E-mail">
+              <span class="delivery_pop-up_form_input_message delivery_pop-up_form_email_message">Забавный у вас адрес</span>
+            </label>
+            <label class="delivery_pop-up_form_label">
+              <span class="delivery_pop-up_form_label_text">Что нужно привезти:</span>
+              <input class="delivery_pop-up_form_input delivery_pop-up_form_product-disc purple-border-focus" type="text" name="user-product-disc"  placeholder="В свободной форме">
+            </label>
+            <label class="delivery_pop-up_form_label">
+              <span class="delivery_pop-up_form_label_text delivery_pop-up_form_label_text_quantity">Количество:</span>
+              <input class="delivery_pop-up_form_input delivery_pop-up_form_quantity purple-border-focus" type="number" name="quantity">
+            </label class="delivery_pop-up_form_label">
+            <button class="delivery_pop-up_submit-btn button-yellow-dark-crossline button" type="submit">Отправить</button>
+            </form>
+          </article>
         </div>
       </section>
 
