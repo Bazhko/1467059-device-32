@@ -250,10 +250,11 @@ body {
 
 .header_search_button {
   display: none;
-  width: 160px;
+  width: 162px;
   line-height: 19px;
   border: none;
   background-color: inherit;
+  border-radius: 0 25px 25px 0;
 }
 
 .header_navigation-user-list_item {
