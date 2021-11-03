@@ -1056,15 +1056,22 @@ body {
   width: 160px;
 }
 
-
-.main_about-services_slider-button-wrap:active {
-  background-color: #000;
+.main_about-services_slider-button_active:focus-visible {
+  outline: none;
+  background: repeating-linear-gradient(rgb(255, 255, 255, 0), rgb(255, 255, 255, 0) 16px, #AF4FFF 16px, #AF4FFF 24px, rgb(255, 255, 255, 0) 24px, rgb(255, 255, 255, 0));
+  color: #000;
 }
 
-.main_about-services_slider-button_active:focus,
+.main_about-services_slider-button-wrap-active:hover,
+.main_about-services_slider-button-wrap-active:focus-within {
+  background: none;
+}
+
+
 .main_about-services_slider-button_active:hover {
-  color: #AF4FFF;
-  background: none
+  outline: none;
+  background: #FFC700;
+  color: #000;
 }
 
 .main_about-services_button-list_item:first-child {
@@ -2451,7 +2458,7 @@ input.delivery_pop-up_form_quantity:focus {
   display: none;
   width: 360px;
   height: 380px;
-  padding-top: 176px;
+  padding-top: 171px;
   box-sizing: border-box;
   text-align: center;
   background-color: rgba(240, 240, 240, 0.8);
