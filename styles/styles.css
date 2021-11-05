@@ -1803,6 +1803,14 @@ body {
   border-radius: 25px;
 }
 
+.footer_tel:hover {
+  color: #FFC700;
+}
+
+.footer_tel:active {
+  opacity: 0.3;
+}
+
 .page-footer_yellow-line {
   width: 80px;
   height: 7px;
