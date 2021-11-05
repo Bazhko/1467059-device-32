@@ -80,13 +80,13 @@ body {
   padding-left: 3px;
   box-sizing: border-box;
   text-align: center;
-  background: repeating-linear-gradient(rgb(255, 255, 255, 0), rgb(255, 255, 255, 0) 16px, #ffc700 16px, #ffc700 24px, rgb(255, 255, 255, 0) 24px, rgb(255, 255, 255, 0));
+  background: repeating-linear-gradient(rgb(255, 255, 255, 0), rgb(255, 255, 255, 0) 39%, #ffc700 39%, #ffc700 61%, rgb(255, 255, 255, 0) 61%, rgb(255, 255, 255, 0));
   border: none;
 }
 
 .button-yellow-dark-crossline:focus-visible {
   outline: none;
-  background: repeating-linear-gradient(rgb(255, 255, 255, 0), rgb(255, 255, 255, 0) 16px, #af4fff 16px, #af4fff 24px, rgb(255, 255, 255, 0) 24px, rgb(255, 255, 255, 0));
+  background: repeating-linear-gradient(rgb(255, 255, 255, 0), rgb(255, 255, 255, 0) 39%, #af4fff 39%, #af4fff 61%, rgb(255, 255, 255, 0) 61%, rgb(255, 255, 255, 0));
 }
 
 .button-yellow-dark-crossline:hover {
@@ -105,7 +105,7 @@ body {
   text-align: center;
   line-height: 50px;
   border: none;
-  background: repeating-linear-gradient(rgb(255, 255, 255, 0), rgb(255, 255, 255, 0) 21px, #ffe17f 21px, #ffe17f 29px, rgb(255, 255, 255, 0) 29px, rgb(255, 255, 255, 0));
+  background: repeating-linear-gradient(rgb(255, 255, 255, 0), rgb(255, 255, 255, 0) 42%, #ffe17f 42%, #ffe17f 58%, rgb(255, 255, 255, 0) 58%, rgb(255, 255, 255, 0));
 }
 
 .purple-border-focus:focus-visible {
@@ -114,7 +114,7 @@ body {
 }
 
 .button-yellow-light-crossline:focus-visible {
-  background: repeating-linear-gradient(rgb(255, 255, 255, 0), rgb(255, 255, 255, 0) 21px, #af4fff 21px, #af4fff 29px, rgb(255, 255, 255, 0) 29px, rgb(255, 255, 255, 0));
+  background: repeating-linear-gradient(rgb(255, 255, 255, 0), rgb(255, 255, 255, 0) 42%, #af4fff 42%, #af4fff 58%, rgb(255, 255, 255, 0) 58%, rgb(255, 255, 255, 0));
   outline: none;
 }
 
@@ -638,6 +638,10 @@ body {
   outline: none;
 }
 
+.header_main-nav_item_delivery {
+  margin-left: 15px;
+}
+
 .header_main-nav_item_delivery a {
   padding-right: 14px;
 }
@@ -698,9 +702,6 @@ body {
   font-weight: 400;
   line-height: 18px;
   text-transform: none;
-}
-
-.header_main-nav_catalog-nav-hidden_list_item {
   border-radius: 25px;
 }
 
@@ -815,31 +816,39 @@ body {
 
 .main_promo_slider_dots-control_list {
   display: flex;
-  width: 80px;
+  min-width: 80px;
   height: 12px;
   margin: 4px 60px 0 auto;
   padding: 0;
+  flex-wrap: wrap;
   grid-column: 3 / 4;
   grid-row: 3 / 4;
-  justify-content: space-between;
+}
+
+.main_promo_slider_dots-control_list_item:not(:last-child) {
+  margin-right: 22px;
+}
+
+.main_promo_slider_item_spec_block-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  min-width: 160px;
 }
 
 .main_promo_slider_item_spec {
-  display: grid;
+  display: flex;
   max-width: 560px;
   margin: 0;
   grid-column: 2 / -1;
   grid-row: 4 / 5;
-  grid-auto-columns: min-content;
-  grid-auto-rows: min-content;
-  row-gap: 11px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
   line-height: 30px;
 }
 
 .main_promo_slider_item_spec_description {
-  min-width: 160px;
-  margin: 0;
-  grid-row: 1 / 2;
+  margin: 0 0 11px 0;
   font-size: 36px;
 }
 
@@ -851,7 +860,7 @@ body {
   font-size: 16px;
 }
 
-.main_promo_slider_item:nth-child(3) .main_promo_slider_item_spec_description:nth-child(4) {
+.main_promo_slider_item_spec_block-wrapper:nth-child(2) {
   min-width: 140px;
 }
 
@@ -864,6 +873,10 @@ body {
   border: none;
   border-radius: 6px;
   cursor: pointer;
+}
+
+.main_promo_slider_item:nth-child(3) .slider-btn {
+  margin-top: 116px;
 }
 
 .main_promo_slider_next-slide-btn {
@@ -1367,7 +1380,7 @@ body {
 .delivery_pop-up_form_quantity {
   position: relative;
   width: 160px;
-  padding: 0 50px;
+  padding: 1px 0 0 1px;
   text-align: center;
 }
 
@@ -1375,9 +1388,12 @@ body {
   margin-right: 45px;
 }
 
-.delivery_pop-up_form_quantity::placeholder {
-  color: #000000;
+.delivery_pop-up_form_quantity_input-wrap input::placeholder {
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #000000;
 }
 
 .delivery_pop-up_form_quantity_wrap {
@@ -1406,18 +1422,6 @@ body {
 .delivery_pop-up_form_quantity_plus-button {
   right: 0;
   padding-right: 2px;
-}
-
-input.delivery_pop-up_form_quantity::-webkit-outer-spin-button,
-input.delivery_pop-up_form_quantity::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-
-input.delivery_pop-up_form_quantity,
-input.delivery_pop-up_form_quantity:hover,
-input.delivery_pop-up_form_quantity:focus {
-  appearance: none;
-  -moz-appearance: textfield;
 }
 
 .delivery_pop-up_form_info-button {
