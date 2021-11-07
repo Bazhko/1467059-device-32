@@ -1733,7 +1733,6 @@ body {
   padding-top: 62px;
   padding-bottom: 44px;
   flex-wrap: wrap;
-  flex: 0 0 auto;
   align-items: center;
   align-content: space-around;
 }
@@ -1884,6 +1883,9 @@ body {
 
 /* Страница каталога */
 
+.main_catalog {
+  flex-grow: 1;
+}
 .main_catalog-header {
   padding: 38px 0 44px 60px;
   box-sizing: border-box;
@@ -1941,7 +1943,6 @@ body {
 
 .catalog-products {
   display: flex;
-  flex-grow: 1;
   justify-content: center;
 }
 
