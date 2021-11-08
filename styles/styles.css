@@ -2386,9 +2386,9 @@ body {
 }
 
 .filter-order-button {
-  display: block;
   width: 30px;
   height: 30px;
+  position: relative;
 }
 
 .filter-order-button_ascending {
@@ -2399,33 +2399,49 @@ body {
   margin-right: -9px;
 }
 
-.filter-order-button_icon-wrap {
-  width: 100%;
-  height: 100%;
+.filter-order-button_icon {
+  width: 0;
+  height: 0;
 }
 
-.filter-order-button_ascending_icon-wrap {
-  background: url("../img/sort-up.svg") no-repeat 50% 50%;
+.filter-order-button_icon::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: block;
+  border: 9.5px solid #000000;
+  border-left-width: 5.5px;
+  border-right-width: 5.5px;
+  border-right-color: transparent;
+  border-left-color: transparent;
 }
 
-.filter-order-button_descending_icon-wrap {
-  background: url("../img/sort-down.svg") no-repeat 50% 50%;
+.filter-order-button_ascending_icon::after {
+  border-top: none;
 }
 
-.filter-order-button_active {
-  opacity: 0.2;
+.filter-order-button_descending_icon::after {
+  border-bottom: none;
 }
 
 .filter-order-button:focus-visible {
   outline-width: 5px;
 }
 
-.filter-order-button_icon-wrap:hover {
-  opacity: 0.5;
+.filter-order-button_active.filter-order-button_icon::after {
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  border-top-color: rgba(0, 0, 0, 0.2);
 }
 
-.filter-order-button_icon-wrap:active {
-  opacity: 1;
+.filter-order-button:hover .filter-order-button_icon::after {
+  border-bottom-color: rgba(0, 0, 0, 0.5);
+  border-top-color: rgba(0, 0, 0, 0.5);
+}
+
+.filter-order-button:active .filter-order-button_icon::after {
+  border-bottom-color: rgba(0, 0, 0, 1);
+  border-top-color: rgba(0, 0, 0, 1);
 }
 
 /* Карточки товаров */
