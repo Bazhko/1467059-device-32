@@ -2388,7 +2388,6 @@ body {
 .filter-order-button {
   width: 30px;
   height: 30px;
-  position: relative;
 }
 
 .filter-order-button_ascending {
@@ -2406,10 +2405,8 @@ body {
 
 .filter-order-button_icon::after {
   content: "";
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  display: block;
+  display: inline-block;
+  margin: 0 0 2px 10px;
   border: 9.5px solid #000000;
   border-left-width: 5.5px;
   border-right-width: 5.5px;
