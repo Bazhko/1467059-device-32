@@ -1858,6 +1858,15 @@ body {
   padding: 8px 6px 0 6px;
 }
 
+.html-academy-logo:hover path{
+  fill: #ffffff;
+}
+
+.html-academy-logo:active path{
+  fill: #ffffff;
+  fill-opacity: 0.3;
+}
+
 .footer_social_list_item-link:focus {
   outline-width: 5px;
   background: none;
