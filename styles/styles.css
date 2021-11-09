@@ -32,13 +32,13 @@
 
 /* Общие стили и классы */
 
-html {
+html,
+body {
   height: 100%;
 }
 
 body {
   display: flex;
-  height: 100%;
   margin: 0 auto;
   flex-direction: column;
   font-family: "Rubik", sans-serif;
@@ -1076,9 +1076,10 @@ body {
 
 .main_about-services_slider-button {
   width: 160px;
+  cursor: pointer;
 }
 
-.main_about-services_slider-button_active:focus-visible {
+.main_about-services_slider-button_active:focus-within {
   outline: none;
   background: repeating-linear-gradient(rgb(255, 255, 255, 0), rgb(255, 255, 255, 0) 16px, #af4fff 16px, #af4fff 24px, rgb(255, 255, 255, 0) 24px, rgb(255, 255, 255, 0));
   color: #000000;
@@ -1089,8 +1090,9 @@ body {
   background: none;
 }
 
-
-.main_about-services_slider-button_active:hover {
+.main_about-services_slider-button-wrap-active:hover .main_about-services_slider-button_active,
+.main_about-services_slider-button_active:hover
+{
   outline: none;
   background: #ffc700;
   color: #000000;
