@@ -2591,14 +2591,16 @@ body {
   outline: none;
 }
 
-.product-card-link:focus .product-card-image {
-  outline: 5px solid #af4fff;
-}
-
 .product-card-link:focus .product-card-title,
 .product-card-link:focus .product-card-price {
   color: #af4fff;
 }
+
+.product-card-link:focus .product-card-image {
+  outline: 5px solid #af4fff;
+}
+
+
 
 /* Меню страниц */
 
