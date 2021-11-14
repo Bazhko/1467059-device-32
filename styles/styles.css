@@ -1091,8 +1091,7 @@ body {
 }
 
 .main_about-services_slider-button-wrap-active:hover .main_about-services_slider-button_active,
-.main_about-services_slider-button_active:hover
-{
+.main_about-services_slider-button_active:hover {
   outline: none;
   background: #ffc700;
   color: #000000;
@@ -1860,11 +1859,11 @@ body {
   padding: 8px 6px 0 6px;
 }
 
-.html-academy-logo:hover path{
+.html-academy-logo:hover path {
   fill: #ffffff;
 }
 
-.html-academy-logo:active path{
+.html-academy-logo:active path {
   fill: #ffffff;
   fill-opacity: 0.3;
 }
@@ -1897,6 +1896,7 @@ body {
 .main_catalog {
   flex-grow: 1;
 }
+
 .main_catalog-header {
   padding: 38px 0 44px 60px;
   box-sizing: border-box;
@@ -2600,8 +2600,6 @@ body {
   outline: 5px solid #af4fff;
 }
 
-
-
 /* Меню страниц */
 
 .pagination-list {
@@ -2658,15 +2656,12 @@ body {
 }
 
 .pagination-prev {
-padding: 0 0 0 13px;
+  padding: 0 0 0 13px;
+  line-height: 62px;
 }
 
 .pagination-next {
   padding: 0 21px 0 0;
-}
-
-.pagination-prev,
-.pagination-next {
   line-height: 62px;
 }
 
