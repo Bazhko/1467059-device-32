@@ -1065,15 +1065,6 @@ body {
   box-sizing: border-box;
 }
 
-.main_about-services_slider-button-wrap-active {
-  background-color: #000000;
-}
-
-.main_about-services_slider-button_active {
-  color: #ffe17f;
-  background: none;
-}
-
 .main_about-services_slider-button {
   width: 160px;
   cursor: pointer;
@@ -1095,6 +1086,17 @@ body {
   outline: none;
   background: #ffc700;
   color: #000000;
+}
+
+.main_about-services_slider-button-wrap-active,
+.main_about-services_slider-button-wrap:active {
+  background-color: #000000;
+}
+
+.main_about-services_slider-button_active,
+.main_about-services_slider-button-wrap:active .main_about-services_slider-button {
+  color: #ffe17f;
+  background: none;
 }
 
 .main_about-services_button-list_item:first-child {
@@ -1637,7 +1639,7 @@ body {
 .main_subscription_form_field {
   width: 600px;
   height: 42px;
-  padding: 7px 0 3px 0;
+  padding: 7px 0 3px 10px;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   color: #444444;
@@ -1680,7 +1682,7 @@ body {
   border-bottom: 3px solid rgba(0, 0, 0, 1);
 }
 
-.main_subscription_form_field_invalid {
+.main_subscription_form_field.main_subscription_form_field_invalid {
   background-color: #f0f0f0;
   border-bottom: 3px solid #ff3d3d;
 }
