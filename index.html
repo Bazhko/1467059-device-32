@@ -20,7 +20,8 @@
           <ul class="header_navigation-user-list">
             <li class="header_navigation-user-list_item header_navigation-user_item_search">
               <form class="header_search" action="https://echo.htmlacademy.ru" method="get">
-                <input class="header_search_field" name="search" placeholder="Поиск по сайту" type="search">
+                <label class="visually-hidden" for="search">Поиск по сайту</label>
+                <input class="header_search_field" name="search" id="search" placeholder="Поиск по сайту" type="search">
                 <button class="header_search_button purple-border-focus" type="submit">
                   <span>Найти</span>
                 </button>
@@ -447,7 +448,8 @@
           <h2 class="main_subscription_heading">Подпишитесь<br> на рассылку</h2>
           <p class="main_subscription_text">Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
           <form class="main_subscription_form" action="https://echo.htmlacademy.ru" method="POST">
-              <input class="main_subscription_form_field" name="email-subscription" type="email" placeholder="Ваш e-mail" required>
+            <label class="visually-hidden" for="main_subscription_form_field">Введите ваш e-mail</label>
+            <input class="main_subscription_form_field" id="main_subscription_form_field" name="email-subscription" type="email" placeholder="Ваш e-mail" required>
               <button class="main_subscription_form_button button" type="submit">
                 <span class="main_subscription_form_button-label">подписаться</span>
               </button>
